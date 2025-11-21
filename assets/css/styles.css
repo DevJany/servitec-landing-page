@@ -31,3 +31,55 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
     line-height: 1.6;
 }
+
+/* ========================================
+   Navbar
+   ======================================== */
+
+#mainNav {
+    background-color: transparent;
+    transition: var(--transition);
+    padding: 1rem 0;
+}
+
+#mainNav.scrolled {
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-md);
+}
+
+.dark-mode #mainNav.scrolled {
+    background-color: var(--bg-secondary);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--text-color) !important;
+    transition: var(--transition);
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+}
