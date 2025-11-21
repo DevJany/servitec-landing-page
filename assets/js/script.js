@@ -222,3 +222,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log('Servitec - Site carregado com sucesso!');
 });
+
+// ========================================
+// Prevenção de Scroll Horizontal
+// ========================================
+
+window.addEventListener('load', function () {
+    document.body.style.overflowX = 'hidden';
+});
