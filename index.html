@@ -381,101 +381,53 @@
         </div>
     </section>
 
-    <!-- Contato Section -->
-    <section id="contato" class="py-5 bg-light">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-                <h2 class="display-4 fw-bold mb-3">Contato e Agendamento</h2>
-                <p class="lead text-muted">
-                    Entre em contato conosco para solicitar um orçamento ou agendar um serviço.
-                </p>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5">
-                    <h3 class="fw-bold mb-4">Fale Conosco</h3>
-                    <p class="mb-4">
-                        Estamos prontos para atender você! Entre em contato através do formulário 
-                        ao lado ou pelos nossos canais de atendimento.
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logo.jpg" alt="Servitec" class="logo-img me-2">
+                        <h5 class="mb-0 fw-bold">Servitec</h5>
+                    </div>
+                    <p class="text-light-emphasis">
+                        Soluções profissionais em eletricidade e eletrônica em João Pessoa - PB. 
+                        Qualidade e segurança em cada serviço.
                     </p>
-                    <div class="contact-info">
-                        <div class="d-flex align-items-start mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="bi bi-whatsapp"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold mb-1">WhatsApp</h5>
-                                <p class="text-muted mb-1">(83) 9 9999-9999</p>
-                                <a href="#" class="text-primary" onclick="abrirWhatsApp('Olá! Gostaria de mais informações.')">
-                                    Enviar mensagem
-                                </a>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-start mb-4">
-                            <div class="contact-icon me-3">
-                                <i class="bi bi-envelope"></i>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold mb-1">E-mail</h5>
-                                <p class="text-muted mb-0">contato@servitec.com.br</p>
-                            </div>
-                        </div>
-                        <div class="bg-warning bg-opacity-10 p-4 rounded border border-warning">
-                            <h5 class="fw-bold mb-2">Horário de Atendimento</h5>
-                            <p class="mb-0">
-                                Segunda a Sexta: 8h às 18h<br>
-                                Sábado: 8h às 12h
-                            </p>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="card shadow-sm">
-                        <div class="card-body p-4">
-                            <form action="https://formsubmit.co/seu-email@exemplo.com" method="POST" id="contactForm">
-                                <!-- FormSubmit Configuration -->
-                                <input type="hidden" name="_captcha" value="false">
-                                <input type="hidden" name="_subject" value="Novo contato - Servitec">
-                                <input type="text" name="_honey" style="display:none">
-                                
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Nome Completo *</label>
-                                    <input type="text" class="form-control" id="name" name="name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">E-mail *</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="phone" class="form-label">Telefone *</label>
-                                    <input type="tel" class="form-control" id="phone" name="phone" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="service" class="form-label">Tipo de Serviço *</label>
-                                    <select class="form-select" id="service" name="service" required>
-                                        <option value="">Selecione o serviço</option>
-                                        <option value="Instalações Elétricas">Instalações Elétricas</option>
-                                        <option value="Manutenção Residencial">Manutenção Residencial</option>
-                                        <option value="Consertos Eletrônicos">Consertos Eletrônicos</option>
-                                        <option value="Serviços em TVs">Serviços em TVs</option>
-                                        <option value="Automação Residencial">Automação Residencial</option>
-                                        <option value="Consultoria Técnica">Consultoria Técnica</option>
-                                        <option value="Outro">Outro</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Mensagem *</label>
-                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-lg w-100">
-                                    <i class="bi bi-send me-2"></i>Enviar Mensagem
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Contato</h5>
+                    <p class="text-light-emphasis mb-1">João Pessoa - PB</p>
+                    <p class="text-light-emphasis mb-1">Telefone: (83) 9 9999-9999</p>
+                    <p class="text-light-emphasis mb-0">E-mail: contato@servitec.com.br</p>
                 </div>
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">Redes Sociais</h5>
+                    <div class="d-flex gap-2 mb-3">
+                        <a href="https://www.instagram.com/servitec.jp" target="_blank" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" onclick="abrirWhatsApp('Olá! Gostaria de mais informações.')" class="btn btn-outline-light btn-sm">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="text-light-emphasis">
+                        Siga-nos no Instagram: <strong>@servitec.jp</strong>
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+                <p class="mb-2 mb-sm-0 text-light-emphasis">
+                    © <span id="currentYear"></span> Servitec. Todos os direitos reservados.
+                </p>
+                <button class="btn btn-outline-light btn-sm" id="backToTop">
+                    <i class="bi bi-arrow-up me-1"></i>Voltar ao topo
+                </button>
             </div>
         </div>
-    </section>
+    </footer>
+
 
     <script src="script.js"></script>
 </body>
