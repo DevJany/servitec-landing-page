@@ -1,4 +1,37 @@
 // ========================================
+// Modo Claro/Escuro
+// ========================================
+
+function initTheme() {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const body = document.body;
+
+    // Verificar tema salvo no localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        themeIcon.classList.remove('bi-moon-fill');
+        themeIcon.classList.add('bi-sun-fill');
+    }
+
+    // Toggle do tema
+    themeToggle.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+
+        if (body.classList.contains('dark-mode')) {
+            themeIcon.classList.remove('bi-moon-fill');
+            themeIcon.classList.add('bi-sun-fill');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeIcon.classList.remove('bi-sun-fill');
+            themeIcon.classList.add('bi-moon-fill');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+}
+
+// ========================================
 // Navbar Scroll Effect
 // ========================================
 
