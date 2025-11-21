@@ -7,6 +7,30 @@
     --accent-color: #fbbf24;
     /* amarelo */
     --accent-hover: #f59e0b;
+
+     /* Cores de Fundo e Texto - Modo Claro */
+    --bg-color: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --text-color: #1f2937;
+    --text-muted: #6b7280;
+    --border-color: #e5e7eb;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    /* Transições */
+    --transition: all 0.3s ease;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    --bg-color: #111827;
+    --bg-secondary: #1f2937;
+    --text-color: #f9fafb;
+    --text-muted: #9ca3af;
+    --border-color: #374151;
 }
 
 /* ========================================
@@ -106,6 +130,13 @@ body {
             rgba(255, 255, 255, 0.95),
             rgba(255, 255, 255, 0.85),
             rgba(255, 255, 255, 0.7));
+}
+
+.dark-mode .hero-overlay {
+    background: linear-gradient(to right,
+            rgba(17, 24, 39, 0.95),
+            rgba(17, 24, 39, 0.85),
+            rgba(17, 24, 39, 0.7));
 }
 
 .hero-section .container {
