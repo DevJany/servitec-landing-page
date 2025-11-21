@@ -90,3 +90,18 @@ function initSmoothScroll() {
         });
     });
 }
+
+// ========================================
+// Botão Voltar ao Topo
+// ========================================
+
+function initBackToTop() {
+    const backToTopBtn = document.getElementById('backToTop');
+
+    backToTopBtn.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
