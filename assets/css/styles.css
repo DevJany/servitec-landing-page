@@ -1,0 +1,33 @@
+/* Variáveis CSS para Cores */
+:root {
+    /* Cores Principais */
+    --primary-color: #1e40af;
+    /* azul elétrico */
+    --primary-hover: #1e3a8a;
+    --accent-color: #fbbf24;
+    /* amarelo */
+    --accent-hover: #f59e0b;
+}
+
+/* ========================================
+   Estilos Globais
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    line-height: 1.6;
+}
