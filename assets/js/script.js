@@ -105,3 +105,25 @@ function initBackToTop() {
         });
     });
 }
+
+// ========================================
+// Formulário de Contato
+// ========================================
+
+function initContactForm() {
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            // Mostrar mensagem de envio
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Enviando...';
+            submitBtn.disabled = true;
+
+            // O FormSubmit irá processar o envio
+            // Após o envio, o usuário será redirecionado
+        });
+    }
+}
