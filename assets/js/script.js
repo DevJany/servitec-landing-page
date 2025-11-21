@@ -185,3 +185,40 @@ function initMobileMenuClose() {
         }
     });
 }
+
+// ========================================
+// Validação de Formulário Customizada
+// ========================================
+
+function initFormValidation() {
+    const forms = document.querySelectorAll('.needs-validation');
+
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    });
+}
+
+// ========================================
+// Inicialização
+// ========================================
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Inicializar todas as funcionalidades
+    initTheme();
+    initNavbarScroll();
+    initSmoothScroll();
+    initBackToTop();
+    initContactForm();
+    initScrollAnimations();
+    updateCurrentYear();
+    initMobileMenuClose();
+    initFormValidation();
+
+    console.log('Servitec - Site carregado com sucesso!');
+});
