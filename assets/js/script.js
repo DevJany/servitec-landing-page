@@ -1,3 +1,16 @@
+// Configuração do WhatsApp
+const WHATSAPP_NUMBER = '5583991216618';
+
+// ========================================
+// WhatsApp Integration
+// ========================================
+
+function abrirWhatsApp(mensagem) {
+    const mensagemEncoded = encodeURIComponent(mensagem);
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensagemEncoded}`;
+    window.open(url, '_blank');
+}
+
 // ========================================
 // Modo Claro/Escuro
 // ========================================
