@@ -155,3 +155,33 @@ function initScrollAnimations() {
     const portfolioItems = document.querySelectorAll('.portfolio-item');
     portfolioItems.forEach(item => observer.observe(item));
 }
+
+// ========================================
+// Ano Atual no Rodapé
+// ========================================
+
+function updateCurrentYear() {
+    const yearElement = document.getElementById('currentYear');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+}
+
+// ========================================
+// Fechar Menu Mobile ao Clicar Fora
+// ========================================
+
+function initMobileMenuClose() {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const navbarToggler = document.querySelector('.navbar-toggler');
+
+    document.addEventListener('click', function (event) {
+        const isClickInsideNav = navbarCollapse.contains(event.target) ||
+            navbarToggler.contains(event.target);
+
+        if (!isClickInsideNav && navbarCollapse.classList.contains('show')) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+            bsCollapse.hide();
+        }
+    });
+}
